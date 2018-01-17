@@ -1,0 +1,25 @@
+/*----- Generals -----*/
+.mr-5 {
+  margin-right: 5px;
+}
+
+.inline {
+  display: inline;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-watch-trailer {
+  border-radius: 10px;
+}
+
+.slider .slides li .caption {
+  top: 50%;
+}
+
+#modal1 {
+  color: black
+}
