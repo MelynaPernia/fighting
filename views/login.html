@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fighting</title>
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <!-- Links styles css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <section class="container">
+    
+    <!-- Section tabs containers -->
+    <div class="row ">
+      <div class="col s12 m6 l6 ">
+          <ul class="tabs">
+              <li class="tab">
+                <a class="active" href="#login">Iniciar sesión</a>
+              </li>
+              <li class="tab">
+                <a href="#register"> Registrarse</a>
+              </li>
+            </ul>
+      </div>
+    </div>
+
+    <!-- Section login -->
+    <div id="login" class="card-panel z-depth-4">
+      <form class="login-form">
+        <div class="row margin ">
+          <div class="input-field">
+              <i class="mdi-action-lock-outline prefix"></i>
+            <input id="user-email" type="email">
+            <label for="user-email" class="center-align">Email</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password">
+            <label for="password">Contraseña</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field">
+            <a href="home.html" class="btn waves-effect pink darken-1">Iniciar sesión</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Section register -->
+    <div id="register" class="card-panel z-depth-4">
+      <form class="col s7 m7 l7 ">
+        <div class="row margin">
+          <div class="input-field">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="user-name" type="text">
+            <label for="user-name" class="center-align">Nombres y Apellidos</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="user-email" type="email">
+            <label for="user-email" class="center-align">E-mail</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="user-phone" type="text">
+            <label for="user-phone" class="center-align">Celular</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password">
+            <label for="password">Contraseña</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field">
+            <a href="home.html" class="btn waves-effect pink darken-1">Registrarse</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+
+  <!-- Links scripts -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+</body>
+
+</html>
