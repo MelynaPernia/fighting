@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Avant premiere</title>
+
   <!-- Links CSS Styles-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/icons/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/main.css">
 
   <!-- Link firebase's conection -->
   <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
@@ -26,7 +29,37 @@
   </script>
 </head>
 
-<body >
+<body>
+
+  <header>
+    <nav>
+      <div class="row">
+        <div class="container-fluid">
+          <div class="nav-wrapper pink">
+            <div>
+              <a href="../index.html" class="brand-logo left">
+                <img src="../assets/images/logo.jpg" alt="">
+              </a>
+            </div>
+            <ul id="">
+              <li>
+                <form class="form-inline waves-light hide-on-med-and-down">
+                  <input class="form-inline" type="text" placeholder="Search">
+                </form>
+                <i class="fa fa-search fa-2x hide-on-med-and-down"></i>
+              </li>
+              <li class="inline">
+                <a href="../index.html">
+                  <i class="fa fa-home fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   <section>
     <div class="container">
       <div class="row">
@@ -92,4 +125,4 @@
 
 </body>
 
-</html>ç
+</html>
