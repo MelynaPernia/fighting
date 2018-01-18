@@ -24,3 +24,15 @@
   color: black
 }
 
+.list-actors img {
+  height: 50px;
+}
+.list-actors p {
+  margin: 0;
+}
+
+.actor {
+  border: 1px solid red;
+  display: inline-block;
+
+}
