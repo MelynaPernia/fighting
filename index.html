@@ -5,34 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Fighting</title>
+  <title>Avant premiere</title>
+
+  <!-- Links CSS Styles-->
   <link rel="stylesheet" href="assets/icons/font-awesome/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
+  <!-- Section header -->
   <header>
     <nav>
       <div class="row">
         <div class="container-fluid">
-          <div class="nav-wrapper light-blue darken-4">
+          <div class="nav-wrapper pink">
             <div>
-              <a href="#" class="brand-logo">Logo</a>
+              <a href="index.html" class="brand-logo left">
+                <img src="assets/images/logo.jpg" alt="">
+              </a>
             </div>
-            <form class="form-inline  waves-light hide-on-med-and-down">
-              <input class="form-inline" type="text" placeholder="Search">
-            </form>
-            <ul id="" class="right ">
-              <li class="inline"><a href="#"><i class="fa fa-search fa-2x"></i></a></li>
-              <li class="inline"><a href="#"><i class="fa fa-user-circle fa-2x"></i></a></li>
+            <ul id="" class="right">
+              <li>
+                <form class="form-inline waves-light hide-on-med-and-down">
+                  <input class="form-inline" type="text" placeholder="Search">
+                </form>
+                <i class="fa fa-search fa-2x hide-on-med-and-down"></i>
+              </li>
+              <li class="inline">
+                <a href="index.html">
+                  <i class="fa fa-home fa-2x"></i>
+                </a>
+              </li>
+              <li class="inline">
+                <a href="views/login.html">
+                  <i class="fa fa-user-circle fa-2x"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
   </header>
+  <!-- Section 1 -View trailers -->
   <section>
     <div class="fullscreen ">
       <div class="slider">
@@ -81,32 +97,48 @@
       </div>
     </div>
   </section>
-
+  <!-- Section 2 -View movie lists and search -->  
   <section class="hide-on-med-and-down">
-    <a class="btn dropdown-button" href="#!" data-activates="dropdown1"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
-    <ul id="dropdown2" class="dropdown-content">
-      <li><a href="#!">Acción</a></li>
-      <li><a href="#!">Comedia</a></li>
-      <li><a href="#!">Histórico</a></li>
-    </ul>
-    <a class="btn dropdown-button" href="#!" data-activates="dropdown2"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i> Tipo<i class="material-icons right">arrow_drop_down</i></a>
-    <a class="btn dropdown-button" href="#!" data-activates="dropdown3">Estreno</a>
-    <!-- /********carrusel******/ -->
-
-    <div class="carousel">
-      <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-      <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-      <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-      <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-      <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-
-    </div>
-    <!-- <button class="btn waves-effect waves-left btn-watch-trailer deep-orange accent-2 z-depth-3 hidden">
-        <i class="fa fa-play mr-5"></i> Ver detalles
-      </button> -->
-    <!-- Modal Trigger -->
+    <div class="container">
+        <ul id="dropdown2" class="dropdown-content">
+            <li>
+              <a href="#!">Acción</a>
+            </li>
+            <li>
+              <a href="#!">Comedia</a>
+            </li>
+            <li>
+              <a href="#!">Histórico</a>
+            </li>
+          </ul>
+          <a class="btn dropdown-button" href="#!" data-activates="dropdown2">
+              <i class="fa fa-sort-amount-asc" aria-hidden="true"></i> Tipo
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+            <a class="btn dropdown-button" href="#!" data-activates="dropdown3">Estreno</a>
+            <!-- Modal Trigger -->
     <a class="waves-effect waves-light btn modal-trigger btn-see-details" href="#modal1 ">ver detalles</a>
 
+    <!-- Section carrusel view -->
+    <div class="carousel">
+        <a class="carousel-item" href="#one!">
+          <img src="https://lorempixel.com/250/250/nature/1">
+        </a>
+        <a class="carousel-item" href="#two!">
+          <img src="https://lorempixel.com/250/250/nature/2">
+        </a>
+        <a class="carousel-item" href="#three!">
+          <img src="https://lorempixel.com/250/250/nature/3">
+        </a>
+        <a class="carousel-item" href="#four!">
+          <img src="https://lorempixel.com/250/250/nature/4">
+        </a>
+        <a class="carousel-item" href="#five!">
+          <img src="https://lorempixel.com/250/250/nature/5">
+        </a>
+      </div>
+    </div>
+    
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
       <div class="modal-content">
@@ -138,49 +170,52 @@
       </div>
     </div>
 
-
-
-    <!-- /***EJEMPLOS **** -->
-
-
-
   </section>
-  <footer class="page-footer light-blue darken-4">
+  <!-- Section footer -->
+  <footer class="page-footer pink">
     <div class="container">
       <div class="row">
-        <a class="waves-effect waves-light btn btn-type-mobile"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
-        <a class="waves-effect waves-light btn btn-type-mobile"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i>Tipo</a>
-        <a class="waves-effect waves-light btn btn-type-mobile"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i>Estreno</a>
-        <!-- <a class="btn-floating disabled"><i class="material-icons">add</i></a> -->
+        <a class="waves-effect waves-light btn pink darken-1">
+          <i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+        <a class="waves-effect waves-light btn pink darken-1">
+          <i class="fa fa-search" aria-hidden="true"></i> Tipo</a>
+        <a class="waves-effect waves-light btn pink darken-1">
+          <i class="fa fa-search" aria-hidden="true"></i> Estreno</a>
       </div>
-    <div class="container hide-on-med-and-down">
-      <div class="row">
-        <a class="btn-floating disabled"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a class="btn-floating disabled"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <!-- <a class="btn-floating disabled"><i class="material-icons">add</i></a> -->
-      </div>
-    </div>
-    <div class="container hide-on-med-and-down">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      <!-- <div class="container hide-on-med-and-down">
+        <div class="row">
+          <a class="btn-floating disabled">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a class="btn-floating disabled">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
+      </div> -->
+      <div class="container hide-on-med-and-down">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Avant Premier</h5>
+            <span>Somos una website muy interactiva en la que podrás encontrar toda la información necesaria de los próximos estrenos a lanzar en las carteleras locales.</span>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright hide-on-med-and-down">
-      <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
       </div>
     </div>
   </footer>
@@ -188,6 +223,6 @@
   <script src="vendors/materialize/js/materialize.min.js"></script>
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
-</body>
-
-</html>
+  </body>
+  
+  </html>
