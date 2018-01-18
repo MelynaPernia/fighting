@@ -1,4 +1,23 @@
+
 $(document).ready(function() {
+  // Creando 
+  var data = "{}";
+  var dataMovie = {
+    'url': 'https://api.themoviedb.org/3/discover/movie?year=2018&primary_release_date.lte=2018-12-31&primary_release_date.gte=2018-01-18&page=1&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=adee43db16188778719f12c7f9ad12cc'
+  };
+
+$.ajax(dataMovie).done(function(data) {
+
+  var movieramdom = $('.movie-random');
+  var moviepicture = '<a class="carousel-item" href="#one!"> 
+                      <img src="https://lorempixel.com/250/250/nature/1"> 
+                      </a>' '
+
+console.log(data) 
+
+}
+
+// vista del carousel
   $('.slider').slider();
   $('.carousel').carousel();
   $('.modal').modal();
