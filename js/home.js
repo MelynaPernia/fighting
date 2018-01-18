@@ -21,7 +21,7 @@ function begin() {
       var movie = '<div class="col s4">' +
         '<div class="card">' +
           '<div class="card-image waves-effect waves-block waves-light">' +
-            '<img class="activator" src="https://image.tmdb.org/t/p/w185'+ photo +'">' +
+            '<img class="activator" src="https://image.tmdb.org/t/p/w185' + photo + '">' +
           '</div>' +
           '<div class="card-content data-movie">' +
             '<p class="card-title activator text-darken-4 tea"><span>' + title + ' <i class="fa fa-ellipsis-h" aria-hidden="true"></i></span> </p>' +
