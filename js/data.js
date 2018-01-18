@@ -35,3 +35,4 @@ $.ajax(movie).done(function (response) {
     console.log(arr[i]['overview']);
 
   }
+});
