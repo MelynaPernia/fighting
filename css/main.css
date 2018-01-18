@@ -1,23 +1,29 @@
 body {
-  
+
 }
 /*----- Generals -----*/
 .mr-5 {
   margin-right: 5px;
 }
 
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .inline {
   display: inline;
 }
 
-.nav-wrapper {
-  display: flex;
-  justify-content: space-around;
-}
+/*Header*/
 
 .btn-watch-trailer {
   border-radius: 10px;
 }
+
 
 .slider .slides li .caption {
   top: 50%;
@@ -42,4 +48,8 @@ body {
 
 .card-title>span:first-child {
   padding-right: 5vh;
+}
+
+footer .row {
+  margin-bottom: 0;
 }
