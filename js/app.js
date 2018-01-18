@@ -1,18 +1,16 @@
-$(document).ready(function () {
-
+$(document).ready(function() {
   $('.slider').slider();
   $('.carousel').carousel();
   $('.modal').modal();
 
-  $('.btn-see-details').click(function () {
-    $('#modal1').modal('open');
-  })
+  $('.carousel-item').click(function() {
+    $('#movie-details').modal('open');
+  });
 });
 
-
-  $('.btn-see-details').click(function() {
-    $('#modal1').modal('open');
-  });
+$('.carousel-item').click(function() {
+  $('#movie-details').modal('open');
+});
 
 // Login and register functions
 
@@ -21,10 +19,10 @@ function registrar() {
   var pass = document.getElementById('pass').value;
 
   firebase.auth().createUserWithEmailAndPassword(email, pass)
-    .then(function () {
+    .then(function() {
       window.location.href = '../views/home.html';
     })
-    .catch(function (error) {
+    .catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
@@ -35,8 +33,8 @@ function registrar() {
 
 function verificar() {
   var user = firebase.auth().currentUser;
-  user.sendEmailVerification().then(function () {
-  }).catch(function (error) {
+  user.sendEmailVerification().then(function() {
+  }).catch(function(error) {
   });
 }
 
@@ -45,20 +43,18 @@ function ingreso() {
   var contrasena2 = document.getElementById('contrasena2').value;
 
   firebase.auth().signInWithEmailAndPassword(email2, contrasena2)
-    .then(function () {
+    .then(function() {
       window.location.href = '../views/home.html';
-
-    }).catch(function (error) {
+    }).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
       // ...
     });
-
 }
 
 function observador() {
-  firebase.auth().onAuthStateChanged(function (user) {
+  firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // console.log('existe un usuario activo');
       // User is signed in.
