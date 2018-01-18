@@ -9,7 +9,7 @@
 
   <!-- Links CSS Styles-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="assets/icons/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/icons/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
   <link rel="stylesheet" href="../css/main.css">
 
@@ -30,23 +30,23 @@
 </head>
 
 <body>
-
+  <!-- Section header -->
   <header>
     <nav>
       <div class="row">
         <div class="container-fluid">
           <div class="nav-wrapper pink">
             <div>
-              <a href="../index.html" class="brand-logo left">
+              <a href="../index.html" class="left">
                 <img src="../assets/images/logo.jpg" alt="">
               </a>
             </div>
-            <ul id="">
+            <ul id="" class="right">
               <li>
                 <form class="form-inline waves-light hide-on-med-and-down">
-                  <input class="form-inline" type="text" placeholder="Search">
+                  <input class="input-field col s10" type="text" placeholder="Buscar película">
+                  <i class="fa fa-search fa-2x hide-on-med-and-down"></i>
                 </form>
-                <i class="fa fa-search fa-2x hide-on-med-and-down"></i>
               </li>
               <li class="inline">
                 <a href="../index.html">
@@ -59,63 +59,162 @@
       </div>
     </nav>
   </header>
-
+  
+  <!-- Section 1 -View trailers -->
+  <section>
+    <div class="fullscreen">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/1">
+            <!-- random image -->
+            <div class="caption">
+              <h3>Nombre de la película</h3>
+              <button class="btn waves-effect waves-left btn-watch-trailer deep-orange accent-2 z-depth-3">
+                <i class="fa fa-play mr-5"></i> Ver trailer
+              </button>
+            </div>
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/2">
+            <!-- random image -->
+            <div class="caption left-align">
+              <h3>Nombre de la película</h3>
+              <button class="btn waves-effect waves-left btn-watch-trailer deep-orange accent-2 z-depth-3">
+                <i class="fa fa-play mr-5"></i> Ver trailer
+              </button>
+            </div>
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/3">
+            <!-- random image -->
+            <div class="caption left-align">
+              <h3>Nombre de la película</h3>
+              <button class="btn waves-effect waves-left btn-watch-trailer deep-orange accent-2 z-depth-3">
+                <i class="fa fa-play mr-5"></i> Ver trailer
+              </button>
+            </div>
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/4">
+            <!-- random image -->
+            <div class="caption left-align">
+              <h3>This is our big Tagline!</h3>
+              <button class="btn waves-effect waves-left btn-watch-trailer deep-orange accent-2 z-depth-3">
+                <i class="fa fa-play mr-5"></i> Ver trailer
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 2 -Login and Register -->
   <section>
     <div class="container">
       <div class="row">
-        <div class="row">
-          <div class="col s12 m7 l7">
-            <!-- Section links tabs -->
-            <ul class="tabs">
-              <li class="tab col s3">
-                <a class="active" href="#iniciar-sesion">Inicia sesión</a>
-              </li>
-              <li class="tab col s3">
-                <a href="#registrarse">Regístrate</a>
-              </li>
-            </ul>
+        <div class="col s12 m7 l7">
+          <!-- Section links tabs -->
+          <ul class="tabs">
+            <li class="tab col s3">
+              <a class="active" href="#iniciar-sesion">Inicia sesión</a>
+            </li>
+            <li class="tab col s3">
+              <a href="#registrarse">Regístrate</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Tab section login -->
+        <div id="iniciar-sesion" class="col s12 m7 l7">
+          <h6>Inicia sesión para acceder a Avant Premier</h6>
+          <div>
+            <input id="email2" type="email" placeholder="Ingresa tu email">
           </div>
-          <!-- Tab section login -->
-          <div id="iniciar-sesion" class="col s12 m7 l7">
-            <h6>Inicia sesión para acceder a Avant Premier</h6>
-            <div class="contenedor-input">
-              <input id="email2" type="email" placeholder="Ingresa tu email">
-            </div>
-            <div class="contenedor-input">
-              <input id="contrasena2" type="password" placeholder="Ingresa tu contraseña">
-            </div>
-            <div class="contenedor-input">
-              <input onclick='ingreso()' type="submit" value="Accede" class="btn btn-outline-primary btn-sm">
-            </div>
-            <p class="forgot">
-              <a href="#">¿No puedes acceder a tu cuenta?</a>
-            </p>
+          <div class="contenedor-input">
+            <input id="contrasena2" type="password" placeholder="Ingresa tu contraseña">
           </div>
-          <!-- Tab section register -->
-          <div id="registrarse" class="col s7">
-            <h6>Registrarse</h6>
-            <div action="#" method="post">
-              <div class="fila-arriba">
-                <div class="contenedor-input">
-                  <input required type="name" id="name" placeholder="Nombre de Usuario">
-                </div>
-                <div class="contenedor-input">
-                  <input required type="email" class="form-control" id="email" placeholder="Ingresa email">
-                </div>
-                <div class="contenedor-input">
-                  <input required type="password" class="form-control" id="pass" placeholder="Ingresa contraseña">
-                </div>
-                <div class="contenedor-input">
-                  <input required type="city" class="form-control" id="city" placeholder="Ciudad">
-                </div>
-                <input onclick='registrar()' type="submit" value="Registrarse" class="btn btn-outline-primary btn-sm">
+          <div class="contenedor-input">
+            <input onclick='ingreso()' type="submit" value="Accede" class="btn btn-outline-primary btn-sm">
+          </div>
+          <p class="forgot">
+            <a href="#">¿No puedes acceder a tu cuenta?</a>
+          </p>
+        </div>
+        <!-- Tab section register -->
+        <div id="registrarse" class="col s7">
+          <h6>Registrarse</h6>
+          <div action="#" method="post">
+            <div class="fila-arriba">
+              <div class="contenedor-input">
+                <input required type="name"  id="name" placeholder="Nombre de Usuario">
               </div>
+              <div class="contenedor-input">
+                <input required type="email" id="email" placeholder="Ingresa email">
+              </div>
+              <div class="contenedor-input">
+                <input required type="password" id="pass" placeholder="Ingresa contraseña">
+              </div>
+              <div class="contenedor-input">
+                <input required type="city" id="city" placeholder="Ciudad">
+              </div>
+              <input onclick='registrar()' type="submit" value="Registrarse" class="btn btn-outline-primary btn-sm">
             </div>
           </div>
         </div>
-        <div>
-        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- Section footer -->
+  <footer class="page-footer pink">
+    <!-- Sub-sections-->
+    <div class="container hide-on-med-and-down">
+      <div class="row">
+        <!-- About us -->
+        <div class="col l3 m3 ">
+          <h5 class="white-text">Avant Premier</h5>
+          <span>Aquí podrás encontrar toda la información necesaria de los próximos estrenos a lanzar.</span>
+        </div>
+        <!-- Social media -->
+        <div class="col l3 m3 right">
+          <h5 class="white-text">Redes Sociales</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="fa fa-facebook"></i> Facebook</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="fa fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="fa fa-instagram"></i> Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contact us -->
+        <div class="col l3 m3 right">
+          <h5 class="white-text">Contáctanos</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="fa fa-map-marker"></i> Av. Benavides 1807, Miraflores</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="fa fa-phone"></i> +051 1 5629732</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="fa fa-envelope"></i> soporte@avantpremier.com.pe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Links JavaScript-->
   <script src="../vendors/jquery/jquery-3.2.1.js"></script>
