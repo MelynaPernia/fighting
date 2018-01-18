@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $('.slider').slider();
   $('.carousel').carousel();
   $('.modal').modal();
@@ -7,6 +8,11 @@ $(document).ready(function () {
     $('#modal1').modal('open');
   })
 });
+
+
+  $('.btn-see-details').click(function() {
+    $('#modal1').modal('open');
+  });
 
 // Login and register functions
 
