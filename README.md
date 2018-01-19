@@ -37,16 +37,18 @@
 ![avant-premier](assets/docs/sketch2.jpg)
 
 * Vistas y diseños de prototipo de pantallas
-![avant-premier](assets/docs/vistas_prototipo1.jpg)
-![avant-premier](assets/docs/vistas_prototipo2.jpg)
-![avant-premier](assets/docs/vistas_prototipo3.jpg)
+![avant-premier](assets/docs/login.png)
+![avant-premier](assets/docs/register.png)
+![avant-premier](assets/docs/home.png)
+![avant-premier](assets/docs/home2.png)
 
 ## 4. Recursos utilizados
 * HTML5
-* CSS
+* CSS 3
 * MATERIALIZE
 * JQUERY v3.2.1.
 * FIREBASE
+* THE MOVIE DB
 
 ## 5. Integrantes
 * Gessenia Canales
