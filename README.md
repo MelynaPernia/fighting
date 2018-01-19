@@ -34,7 +34,7 @@
 
 * Sketch prototipo de pantallas
 ![avant-premier](assets/docs/sketch1.jpg)
-![avant-premier](assets/docs/sketch1.jpg)
+![avant-premier](assets/docs/sketch2.jpg)
 
 * Vistas y diseños de prototipo de pantallas
 ![avant-premier](assets/docs/vistas_prototipo1.jpg)
