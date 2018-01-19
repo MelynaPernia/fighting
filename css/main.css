@@ -1,5 +1,8 @@
+:root {
+  --gray: #757575;
+}
 body {
-
+  font-family: 'Raleway', sans-serif;
 }
 /*----- Generals -----*/
 .mr-5 {
@@ -11,7 +14,15 @@ body {
 }
 
 .mb-0 {
-  margin-bottom: 0;
+  margin-bottom: 0!important;
+}
+
+.mb-10 {
+  margin-bottom: 10px!important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .inline {
@@ -52,4 +63,42 @@ body {
 
 footer .row {
   margin-bottom: 0;
+}
+
+/**Home- js***/
+.title-movie {
+  margin-bottom: 0
+}
+.title-movie span {
+  font-size: 14px;
+  font-weight: bold;
+  /* color: rgb(17, 28, 85) */
+}
+.title-movie i {
+  font-size: 16px;
+  color: rgb(31, 47, 130)
+}
+
+.data-movie button {
+  text-decoration: none;
+  border: none;
+  margin-right:  5px;
+  background-color: white;
+  border-radius: 5vh;
+  color: var(--gray);
+  font-size: 14px
+}
+
+.data-movie button:last-child {
+  background-color: #bb0505;
+  color: white;
+}
+
+.text-color-date i, .text-color-date span{
+  color: var(--gray);
+}
+
+.data-movie button:hover {
+  color:rgb(255, 255, 255);
+  background-color: rgb(45, 45, 45);
 }
