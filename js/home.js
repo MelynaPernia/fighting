@@ -20,9 +20,9 @@ function begin() {
          '<input type="checkbox" data-id="' + arrGender.genres[i]['id'] + '" id="test' + (i + 1) + '" />' +
         '<label  for="test' + (i + 1) + '">' + arrGender.genres[i]['name'] + '</label>' +
        '</p>';
-       listGender += cboxGender;
-     };
-     $('.cbx-general').html(listGender);
+      listGender += cboxGender;
+    };
+    $('.cbx-general').html(listGender);
   });
 
   function dataVideo(idMovie) {
@@ -55,16 +55,11 @@ function begin() {
           '<p class="text-color-date mb-10"><i class="fa fa-calendar"></i><span> ' + releaseDate + ' </span></p>' +
           '<button class=""><span class="like"><i class="fa fa-thumbs-o-up "></i> 2 </span></button>' +
           '<button class=""><span><i class="fa fa-heart "></i> 1 </span></button>' +
-          '<button class="btn-trailer"><a href="#"><i class="fa fa-play "></i> ver trailer </a></button>' +
+          // '<button class="btn-trailer"><a href="#"><i class="fa fa-play "></i> ver trailer </a></button>' +
           '</div>' +
           '<div class="card-reveal">' +
           '<span class="card-title grey-text text-darken-4">Resumen<i class="material-icons right">close</i></span>' +
           '<p>' + overview + '</p>' +
-          '<span class="grey-text text-darken-4">Actors</span>' +
-          '<div class="list-actors">' +
-          '<div class="actor">' +
-          '<p class="title">Title</p>' +
-          '<img src="../assets/images/pelicula.jpg" alt="" class="circle">' +
           '</div>' +
           '</div>' +
           '<p>Director : <span>name-director</span></p>' +
@@ -78,15 +73,20 @@ function begin() {
       }
     }
     $boxMovie.html(listMovie);
+
     $('[type=checkbox]').click(function(event) {
       var idGender = $(this).data('id');
-      $('.list-movie > div').each(function(index) {
-        if ($(this).data('gender') !== idGender) {
-          $(this).css('display', 'none');
-        } else {
+      if ($('[type=checkbox]').is(':checked')) {
+        $('.list-movie > div').each(function(index) {
+          if ($(this).data('gender') !== idGender) {
+            $(this).css('display', 'none');
+          }
+        });
+      } else {
+        $('.list-movie > div').each(function(index) {
           $(this).css('display', 'block');
-        }
-      });
+        });
+      }
     });
   });
 }

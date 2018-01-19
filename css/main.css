@@ -89,10 +89,10 @@ footer .row {
   font-size: 14px
 }
 
-.data-movie button:last-child {
+/* .data-movie button:last-child {
   background-color: #bb0505;
   color: white;
-}
+} */
 
 .text-color-date i, .text-color-date span{
   color: var(--gray);
