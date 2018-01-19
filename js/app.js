@@ -7,7 +7,7 @@ $(document).ready(function () {
     'url': 'https://api.themoviedb.org/3/discover/movie?year=2018&primary_release_date.lte=2018-12-31&primary_release_date.gte=2018-01-18&page=1&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=33b84274e7334de2052cae93842e7f67'
   };
 
-  $.ajax(dataMovie).done(function (data) {
+  $.ajax(dataMovie).done(function(data) {
     var arrMovie = data.results;
     var element = 12;
     var title = '';
@@ -17,17 +17,18 @@ $(document).ready(function () {
       arrMovie[index];
       title = arrMovie[index]['title'];
       photo = arrMovie[index]['backdrop_path'];
-
-      var movieRandom =
-        '<div class="col s3">' +
-        '<div class="card">' +
-        '<div class="card-image waves-effect waves-block waves-light" >' +
-        '<img class="activator" src="https://image.tmdb.org/t/p/w185' + photo + '">' +
-        '<div class="caption">' +
-        '<h6 class="center-align">' + title + '</h6>' +
-        '</div>' +
-        '</div>' + '</div>' + '</div>';
-      listMovie += movieRandom;
+      if (photo) {
+        var movieRandom =
+          '<div class="col s3">' +
+          '<div class="card">' +
+          '<div class="card-image waves-effect waves-block waves-light" >' +
+          '<img class="activator" src="https://image.tmdb.org/t/p/w185' + photo + '">' +
+          '<div class="caption">' +
+          '<h6 class="center-align">' + title + '</h6>' +
+          '</div>' +
+          '</div>' + '</div>' + '</div>';
+        listMovie += movieRandom;
+      }
     }
     $boxMovie.html(listMovie);
   });
@@ -37,12 +38,12 @@ $(document).ready(function () {
   $('.carousel').carousel();
   $('.modal').modal();
 
-  $('.carousel-item').click(function () {
+  $('.carousel-item').click(function() {
     $('#movie-details').modal('open');
   });
 });
 
-$('.carousel-item').click(function () {
+$('.carousel-item').click(function() {
   $('#movie-details').modal('open');
 });
 
@@ -62,7 +63,6 @@ function registrar() {
       var errorMessage = error.message;
       // ...
     });
-  // console.log('estas registrado');
 }
 
 function verificar() {
@@ -83,14 +83,12 @@ function ingreso() {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
-      // ...
     });
 }
 
 function observador() {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      // console.log('existe un usuario activo');
       // User is signed in.
       var displayName = user.displayName;
       var email = user.email;
@@ -101,9 +99,7 @@ function observador() {
       var providerData = user.providerData;
       // ...
     } else {
-      // User is signed out.
       console.log('no existe un usuario activo');
-      // ...
     }
   });
 }
