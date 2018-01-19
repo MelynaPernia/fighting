@@ -18,8 +18,6 @@
 
 ## 3.1. Distribución de tareas
 
-![avant-premier](assets/docs/vistas_tareas.jpg)
-
 | Día 1                                            | Día 2                                                                  |
 | ------------------------------------------------ |----------------------------------------------------------------------- |
 | Definir la idea y detectar la necesidad.         | Culminar con el maquetado del website: vistas desktop y mobile | $1600 |
@@ -32,10 +30,13 @@
 | ------------------------------------------------ |----------------------------------------------------------------------- |
 | Funcionalidad del API y el website.              | Presentación del producto final.                                       |
 
-
-
 ## 3.2. Vistas y prototipos de pantallas
 
+* Sketch prototipo de pantallas
+![avant-premier](assets/docs/sketch1.jpg)
+![avant-premier](assets/docs/sketch1.jpg)
+
+* Vistas y diseños de prototipo de pantallas
 ![avant-premier](assets/docs/vistas_prototipo1.jpg)
 ![avant-premier](assets/docs/vistas_prototipo2.jpg)
 ![avant-premier](assets/docs/vistas_prototipo3.jpg)
