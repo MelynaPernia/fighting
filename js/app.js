@@ -4,11 +4,10 @@ $(document).ready(function() {
   var $boxMovie = $('.movie-random');
   var listMovie = '';
   var dataMovie = {
-  'url': 'https://api.themoviedb.org/3/discover/movie?year=2018&primary_release_date.lte=2018-12-31&primary_release_date.gte=2018-01-18&page=1&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=33b84274e7334de2052cae93842e7f67'
+    'url': 'https://api.themoviedb.org/3/discover/movie?year=2018&primary_release_date.lte=2018-12-31&primary_release_date.gte=2018-01-18&page=1&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=33b84274e7334de2052cae93842e7f67'
   };
 
   $.ajax(dataMovie).done(function(data) {
-
     var arrMovie = data.results;
     var element = 4;
     var title = '';
@@ -19,21 +18,21 @@ $(document).ready(function() {
       title = arrMovie[index]['title'];
       photo = arrMovie[index]['backdrop_path'];
 
-      var movieRandom = '<li>' +
-            '<img src="https://image.tmdb.org/t/p/w185' + photo + '">'+
+      var movieRandom = 
+            '<img src="https://image.tmdb.org/t/p/w185' + photo + '">' +
             '<div class="caption">' +
-              '<h3>' + title + '</h3>' +
-              '<button class="btn waves-effect waves-left btn-watch-trailer deep-orange accent-2 z-depth-3">' +
-                '<i class="fa fa-play mr-5"></i> Ver trailer ' +
-              '</button>' +
+              '<h6>' + title + '</h6>' + 
+              '<button class="btn waves-effect waves-left btn-watch-trailer deep-orange accent-2 z-depth-3">' + 
+                '<i class="fa fa-play mr-5"></i>Ver detalles ' +
+              '</button>' + 
             '</div>' +
-          '</li>';
+          '</li>' + '<br>';
       listMovie += movieRandom;
     }
     $boxMovie.html(listMovie);
   });
 
-// vista del carousel
+  // vista del carousel
   $('.slider').slider();
   $('.carousel').carousel();
   $('.modal').modal();
