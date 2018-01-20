@@ -1,8 +1,36 @@
 :root {
-  --gray: #757575;
+  --dark-gray: #4a4a59;
+  --gray: #d9dadc;
+  --black:#070405;
 }
+
 body {
   font-family: 'Raleway', sans-serif;
+}
+
+/*----- header-nav ------*/
+.nav-wrapper, .page-footer {
+  background: rgba(19, 69, 110, 1)!important;
+}
+
+.list-menu a{
+  color: white;
+  vertical-align: center;
+}
+
+.list-menu li{
+  padding: 5px 0;
+  text-align: center;
+  width: 33.3%;
+}
+
+.list-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.indicators > .active{
+  background-color: #87BCDE!important;
 }
 /*----- Generals -----*/
 .mr-5 {
@@ -17,6 +45,34 @@ body {
   margin-bottom: 0!important;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+.mr-0 {
+  margin-right: 0!important;
+}
+.mg-0 {
+  margin: 0!important;
+}
+
+.pdt-0 {
+  padding-top: 0!important;
+}
+
+.pdr-0 {
+  padding-right: 0!important;
+}
+.pdl-0 {
+  padding-left: 0!important;
+}
+
+.pdb-0 {
+  padding-bottom: 0!important;
+}
+.pd-0 {
+  padding: 0;
+}
+
 .mb-10 {
   margin-bottom: 10px!important;
 }
@@ -29,80 +85,46 @@ body {
   display: inline;
 }
 
-/*Header*/
+body {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-.btn-watch-trailer {
+.btn-see-trailer {
+  padding: 0px 10px;
+  font-size: 12px;
   border-radius: 10px;
+  background-color: #F03A47;
+  width: 125px;
 }
 
-
-.slider .slides li .caption {
-  top: 50%;
+.caption {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer{
+  position: fixed;
+  top: 90vh;
+  width: 100vw;
 }
 
-#modal1 {
-  color: black
+nav {
+  position: fixed;
+  z-index: 10;
+}
+#section-list-gender {
+  margin-top: 10vh;
 }
 
-.list-actors img {
-  height: 50px;
-}
-.list-actors p {
-  margin: 0;
-}
+ #section-login{
+   margin-top: 15vh;
+   height: inherit;
+ }
 
-.actor {
-  border: 1px solid red;
-  display: inline-block;
-
-}
-
-.card-title>span:first-child {
-  padding-right: 5vh;
-}
-
-footer .row {
-  margin-bottom: 0;
-}
-
-/**Home- js***/
-.title-movie {
-  margin-bottom: 0
-}
-.title-movie span {
-  font-size: 14px;
-  font-weight: bold;
-  /* color: rgb(17, 28, 85) */
-}
-.title-movie i {
-  font-size: 16px;
-  color: rgb(31, 47, 130)
-}
-
-.data-movie button {
-  text-decoration: none;
-  border: none;
-  margin-right:  5px;
-  background-color: white;
-  border-radius: 5vh;
-  color: var(--gray);
-  font-size: 14px
-}
-
-/* .data-movie button:last-child {
-  background-color: #bb0505;
-  color: white;
-} */
-
-.text-color-date i, .text-color-date span{
-  color: var(--gray);
-}
-
-.data-movie button:hover {
-  color:rgb(255, 255, 255);
-  background-color: rgb(45, 45, 45);
-}
-
-.display-none {
-  display: none;
+.hidden {
+  visibility: hidden;
 }
