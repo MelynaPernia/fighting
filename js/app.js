@@ -1,4 +1,22 @@
+$(document).ready(function() {
+  $('.slider').slider();
+  $('.modal').modal();
+  $('.btn-gender-movie').click(function() {
+    $('.slider').attr('hidden','true');
+    $('#section-list-gender').removeAttr('hidden');
+  });
+  $('.btn-start-movie').click(function() {
+    $('.slider').removeAttr('hidden', 'true');
+    $('#section-list-gender').attr('hidden', 'true');
+  });
 
+  $('.sign-up').click(function() {
+    $('.login').addClass('hidden');
+    $('.confirm-password').removeAttr('hidden');
+    $('.btn-sign-up').removeClass('hidden');
+  });
+});
+/*
 $(document).ready(function () {
   // Creando
   var $boxMovie = $('.movie-random');
@@ -43,9 +61,11 @@ $(document).ready(function () {
   });
 });
 
-$('.carousel-item').click(function() {
-  $('#movie-details').modal('open');
-});
+// $('.carousel-item').click(function() {
+//   $('#movie-details').modal('open');
+// });
+
+
 
 // Login and register functions
 
@@ -104,3 +124,4 @@ function observador() {
   });
 }
 observador();
+*/
