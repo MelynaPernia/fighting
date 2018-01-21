@@ -128,3 +128,21 @@ nav {
 .hidden {
   visibility: hidden;
 }
+
+.list-social-networks li {
+  display: inline-block;
+}
+#list-movie {
+  width: 200px;
+  margin: 0;
+}
+
+@media (min-width: 426px){
+  footer {
+    position: relative;
+    top: 0;
+    width: auto;
+  }
+
+
+}
