@@ -129,12 +129,16 @@ nav {
   visibility: hidden;
 }
 
-.list-social-networks li {
+.list-social-networks li, .btn-login-social-network li {
   display: inline-block;
 }
 #list-movie {
   width: 200px;
   margin: 0;
+}
+
+.btn-login-social-network {
+  margin-top: 20vh;
 }
 
 @media (min-width: 426px){
