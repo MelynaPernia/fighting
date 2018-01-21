@@ -31,7 +31,7 @@
     </nav>
 
   </header>
-  <!-- Login section-->
+  <!-- Register section -->
   <section id="section-login">
     <div class="container">
       <div class="row">
@@ -39,35 +39,26 @@
           <div class="container-forms">
             <div class="row" id="section-login">
               <div class="contenido-tab">
-                <!-- Logins -->
-                <div id="iniciar-sesion">
-                  <h5>Iniciar sesión</h5>
+                <!-- Register -->
+                <div id="registrarse">
+                  <h5>Registrarse</h5>
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input class="validate" id="name" type="text">
+                    <label for="icon_prefix">Usuario</label>
+                  </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix">mail_outline</i>
-                    <input id="email2" type="email" class="validate">
+                    <input class="validate" id="email" type="email">
                     <label for="icon_prefix">E-mail</label>
                   </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix">lock_outline</i>
-                    <input id="contrasena2" type="password" class="validate">
-                    <label for="icon_telephone">Contraseña</label>
+                    <input class="validate" id="pass" type="password">
+                    <label for="icon_prefix">Contraseña</label>
                   </div>
-                  <p>¿Eres nuevo en avant premier?
-                    <a class="sign-up" href="register.html">Regístrate</a>
-                  </p>
-                  <button onclick='ingreso()' type="submit" class="btn waves-effect waves-light right login" name="action">Acceder
+                  <button onclick='register()' type="submit" class="btn waves-effect waves-light right login" name="action">Registrarse
                   </button>
-                  <ul class="btn-login-social-network center">
-                    <li>
-                      <button class="btn-floating red" type="submit" id="inifacebook">
-                        <i class="fa fa-google"></i>
-                    </li>
-                    <li>
-                      <button class="btn-floating blue" type="submit" id="inigoogle">
-                        <i class="fa fa-facebook"></i>
-                      </button>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
