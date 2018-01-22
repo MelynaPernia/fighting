@@ -156,6 +156,10 @@ nav {
   border-radius: 10px;
 }
 
+.size-title-movie {
+  font-size: 12px!important;
+}
+
 @media (min-width: 426px){
   footer {
     position: relative;
