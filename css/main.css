@@ -140,6 +140,25 @@ nav {
 .btn-login-social-network {
   margin-top: 20vh;
 }
+#section-movie {
+  margin-top: 20vh;
+}
+
+.card-title-movie {
+  font-size: 12px!important;
+}
+
+.text-date {
+  background-color: #D8315B;
+  padding: 0px 20px!important;
+  margin-bottom: 10%;
+  font-size: 16px!important;
+  border-radius: 10px;
+}
+
+.size-title-movie {
+  font-size: 12px!important;
+}
 
 @media (min-width: 426px){
   footer {
@@ -147,6 +166,4 @@ nav {
     top: 0;
     width: auto;
   }
-
-
 }
