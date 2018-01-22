@@ -21,68 +21,87 @@
       <div class="nav-wrapper">
         <a href="index.html" class="brand-logo left">Logo</a>
         <ul class="right">
-          <li><a href="views/login.html"><i class="material-icons">account_circle</i></a></li>
-          <li><a href="#"><i class="material-icons">search</i></a></li>
+          <li>
+            <a href="views/login.html">
+              <i class="material-icons">account_circle</i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="material-icons">search</i>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
-
     <div class="slider">
       <ul class="slides">
         <li>
-          <img src="https://lorempixel.com/580/250/nature/2">
-          <!-- random image -->
+          <img src="https://pre00.deviantart.net/f2cf/th/pre/f/2017/305/c/5/black_panther_textless_poster_by_mrwonderworks-dbsf454.jpg">
           <div class="caption">
-            <h4>Película</h4>
-            <button class="btn waves-effect btn-see-trailer" type="submit" name="action">
-              <i class="material-icons left mr-0">play_arrow</i> ver trailer
-            </button>
+            <h4>Black Panther Teaser Trailer</h4>
+            <a class="btn waves-effect btn-see-trailer modal-trigger" href="#trailer1"><i class="material-icons left mr-0">play_arrow</i>Ver trailer</a>
           </div>
         </li>
         <li>
-          <img src="https://lorempixel.com/580/250/nature/2">
+          <img src="https://i.kinja-img.com/gawker-media/image/upload/s--Y_pVjEq---/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/cdq0bdz0as48ejnlmrm1.jpg">
           <!-- random image -->
           <div class="caption">
-            <h4>Película</h4>
-            <button class="btn waves-effect btn-see-trailer" type="submit" name="action">
-              <i class="material-icons left mr-0">play_arrow</i> ver trailer
-            </button>
+            <h4>Deadpool 2 Teaser Trailer</h4>
+            <a class="btn waves-effect btn-see-trailer modal-trigger" href="#trailer2"><i class="material-icons left mr-0">play_arrow</i>Ver trailer</a>
           </div>
         </li>
         <li>
-          <img src="https://lorempixel.com/580/250/nature/2">
+          <img src="https://static0.srcdn.com/wp-content/uploads/2017/12/Bryce-Dallas-Howard-and-Justice-Smith-in-Jurassic-World-2-cropped.jpg">
           <!-- random image -->
           <div class="caption">
-            <h4>Película</h4>
-            <button class="btn waves-effect btn-see-trailer" type="submit" name="action">
-              <i class="material-icons left mr-0">play_arrow</i> ver trailer
-            </button>
-          </div>
-        </li>
-        <li>
-          <img src="https://lorempixel.com/580/250/nature/2">
-          <!-- random image -->
-          <div class="caption">
-            <h4>Película</h4>
-            <button class="btn waves-effect btn-see-trailer" type="submit" name="action">
-              <i class="material-icons left mr-0">play_arrow</i>ver trailer
-            </button>
+            <h4>Jurassic World 2 Teaser Trailer</h4>
+            <a class="btn waves-effect btn-see-trailer modal-trigger" href="#trailer3"><i class="material-icons left mr-0">play_arrow</i>Ver trailer</a>
           </div>
         </li>
       </ul>
     </div>
+  <!-- Modals trailers -->
+  <div id="trailer1" class="modal">
+    <div class=" video-container responsive-video">
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/dxWvtMOGAhw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="views/login.html" class="modal-action modal-close waves-effect waves-green btn-flat">Ver más detalles</a>
+    </div>
+  </div>
+  <div id="trailer2" class="modal">
+    <div class=" video-container responsive-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1yAawyn81uo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="views/login.html" class="modal-action modal-close waves-effect waves-green btn-flat">Ver más detalles</a>
+    </div>
+  </div>
+  <div id="trailer3" class="modal">
+    <div class=" video-container responsive-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/f8lX-08jV1o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="views/login.html" class="modal-action modal-close waves-effect waves-green btn-flat">Ver más detalles</a>
+    </div>
+  </div>
   </header>
-
 
   <!-- Seccion para modo movil  -->
   <section id="section-list-gender" hidden>
     <div class="row">
       <div class="col s12">
         <ul class="tabs">
-          <li class="tab col s3"><a href="#test1">Acción</a></li>
-          <li class="tab col s3"><a class="active" href="#test2">Comedia</a></li>
-          <li class="tab col s3 "><a href="#test3">Animación</a></li>
-
+          <li class="tab col s3">
+            <a href="#test1">Acción</a>
+          </li>
+          <li class="tab col s3">
+            <a class="active" href="#test2">Comedia</a>
+          </li>
+          <li class="tab col s3 ">
+            <a href="#test3">Animación</a>
+          </li>
         </ul>
       </div>
       <div id="test1" class="col s12">Test 1</div>
@@ -103,14 +122,26 @@
     </div>
   </section>
 
-
-
   <footer class="page-footer pdt-0">
-
     <ul class="list-menu hide-on-med-and-up mb-0 mt-0">
-      <li class="waves-effect center btn-start-movie"><a href="#"><i class="material-icons">home</i><p class="mt-0 mb-0">Inicio</p></a></li>
-      <li class="waves-effect center btn-gender-movie"><a href="#"><i class="material-icons">movie_filter</i><p class="mt-0 mb-0">Género</p></a></li>
-      <li class="waves-effect"><a href="views/login.html"><i class="material-icons">add</i><p class="mt-0 mb-0">Más</p></a></li>
+      <li class="waves-effect center btn-start-movie">
+        <a href="index.html">
+          <i class="material-icons">home</i>
+          <p class="mt-0 mb-0">Inicio</p>
+        </a>
+      </li>
+      <li class="waves-effect center btn-gender-movie">
+        <a href="#">
+          <i class="material-icons">movie_filter</i>
+          <p class="mt-0 mb-0">Género</p>
+        </a>
+      </li>
+      <li class="waves-effect">
+        <a href="views/login.html">
+          <i class="material-icons">perm_contact_calendar</i>
+          <p class="mt-0 mb-0">Calendario</p>
+        </a>
+      </li>
     </ul>
     <!-- footer para trablet y desktop -->
     <div class="container hide-on-small-only">
@@ -124,24 +155,39 @@
           <h6>Contáctanos</h6>
           <!-- <hr> -->
           <ul>
-            <li><i class="material-icons">place</i> Av. Benavides 1807, Miraflores</li>
-            <li><i class="material-icons">phone</i> +051 1 5629732</li>
-            <li><i class="material-icons">mail_outline</i> soporte@avantpremier.com.pe</li>
+            <li>
+              <i class="material-icons">place</i> Av. Benavides 1807, Miraflores</li>
+            <li>
+              <i class="material-icons">phone</i> +051 1 5629732</li>
+            <li>
+              <i class="material-icons">mail_outline</i> soporte@avantpremier.com.pe</li>
           </ul>
         </div>
         <div class="col l4 m3">
           <h6>Redes sociales</h6>
           <!-- <hr> -->
           <ul class="list-social-networks">
-            <li><a class="btn-floating waves-effect"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a class="btn-floating waves-effect"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a class="btn-floating waves-effect"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li>
+              <a class="btn-floating waves-effect">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="btn-floating waves-effect">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="btn-floating waves-effect">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
+      <div class="container center">
         © 2018 Copyright Text
       </div>
     </div>
