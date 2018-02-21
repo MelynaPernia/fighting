@@ -1,6 +1,11 @@
-# Hackaton: Avant-Premier
+# Avant-Premier
 
-![avant-premier](assets/docs/logo-readme.jpg)
+Avant premier es un sitio web, donde encontrarás información de las películas en estreno.
+
+![image](https://user-images.githubusercontent.com/24758745/36495669-002ebec2-1704-11e8-8e1b-1177825b87c6.png)
+
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
 
 ## 1. Objetivo:
 > En base a la necesidad detectada en los usuarios, a quienes les interesaba saber sobre los próximos estrenos, se desarrolló una plataforma que permita ubicar las próximas peliculas a estrenar.
