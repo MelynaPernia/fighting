@@ -1,6 +1,6 @@
 # Avant-Premier
 
-Avant premier es un sitio web, donde encontrarás información de las películas en estreno.
+Avant premier es un sitio web, donde encontrarás información de las películas en estreno. Descubrirás lo mágico y fantástico que aprenderás acerca de las películas. 
 
 ![image](https://user-images.githubusercontent.com/24758745/36495669-002ebec2-1704-11e8-8e1b-1177825b87c6.png)
 
